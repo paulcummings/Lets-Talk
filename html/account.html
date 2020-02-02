@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Home</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+    <link href="../css/styles.css" rel="stylesheet">
+    <link rel="icon" href="../img/logo.png">
+  </head>
+  <body>
+    <!-- Navigation Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <!-- This <a> contains logo image and text -->
+      <a class="navbar-brand" href="#">
+        <!-- CAN INSERT LOGO IMAGE HERE -->
+        <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Let's Talk!
+      </a>
+
+      <!-- Not sure what this part does -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <!-- This is the menu to the right of the Logo -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+
+          <!-- Clicking Register navs to Register page -->
+          <li class="nav-item">
+            <a class="nav-link" href="../html/connect.html">Connect</a>
+          </li>
+          <!-- Clicking Register navs to Register page -->
+          <li class="nav-item">
+            <a class="nav-link" href="../html/chat.html">Chat</a>
+          </li>
+
+          <li class="nav-item dropdown ml-auto">
+            <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+              Hi <span class="name"></span>
+            </a>
+            <div class="dropdown-menu dropdown-menu-right" aria-labelledby="navbarDropdown">
+              <a style="color:black !important;" class="dropdown-item" href="../html/profile.html">Account</a>
+              <div class="dropdown-divider"></div>
+              <a style="color:black !important;" class="dropdown-item" id="btnLogout" href="../index.html">Log out</a>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </nav>
+    <div class="area" >
+     <ul class="squares">
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+       <li></li>
+     </ul>
+       <div class="container-fluid">
+         <div class="row m-auto mt-0">
+           <div class="col m-auto">
+             <div id="loggedInName" class="caption col">
+               <div class="text-center" style="position:relative;min-width:700px;">
+                 <span>Hey <span class="name"></span>! Welcome to Let's Talk!</span>
+                </div>
+               <h5 class="text-center" style="min-width:600px;font-weight:bold; color:#bed8d4;">
+                 Let's Talk offers more than 100 lanuages to choose from! <br>
+                  <!-- Get started by simply searching up the <br>language of your choice
+                  to learn or teach:-->
+                </h5>
+                   <div id="searchbar">
+                      <!-- <form autocomplete="off" action="" id="searchform">
+                        <div class="input-group mb-3">
+                           <input type="text" class="form-control " placeholder="Search languages..." aria-label="Recipient's username" aria-describedby="basic-addon2" name="myCountry" id="myInput" onchange='passValue(event)'>
+                           <div class="input-group-append">
+                             <button id="searchlanguages" style="background-color: #e3e3e3; color:#555555;" class="btn btn-light" type="submit"><i class="oi oi-magnifying-glass"></i></button>
+                           </div>
+                         </div>
+                       </form> -->
+                  </div>
+                  <br><br><br>
+             </div>
+          </div>
+        </div>
+    </div>
+    <div style="padding:20px;"></div>
+    <div class="container-fluid">
+      <div class="row" id="info1">
+        <div class="text-center col-4 ">
+          <div class="col border rounded info">
+          <img src="../img/about.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            <h3 id="info">What Are We?</h3>
+            <p>
+            Let's Talk! is a video and texting platform for people who want
+            users to improve their speaking abilities in their non-native
+            language by chatting with native speakers.
+            </p>
+          </div>
+        </div>
+        <div class="text-center col-4 ">
+          <div class="col border rounded info">
+          <img src="../img/communication.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            <h3 id="info">COMMUNICATION</h3>
+            <p>
+            Communication is an essential part of our everyday life. We want to help
+            people bridge the language barrier by connecting them with native
+            speakers across the web.
+            </p>
+          </div>
+        </div>
+        <div class="text-center col-4">
+          <div class="col border rounded info">
+          <img src="../img/efficient.png" width="50" height="50" class="d-inline-block align-top" alt="">
+            <h3 id="info">EFFICIENT</h3>
+            <p>Don't have time to learn a new language? Let's Talk! lets you
+            hop into a conversation for a couple minutes. Explore, learn and chat away. It's that easy!
+            </p>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+    <script src="../js/logout.js"></script>
+    <script src="../js/account_home.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

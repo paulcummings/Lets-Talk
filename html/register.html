@@ -1,0 +1,338 @@
+<!DOCTYPE html>
+
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Register</title>
+    <!-- Latest compiled and minified CSS -->
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+    <!-- Optional theme -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+    <link href="../css/styles.css" rel="stylesheet">
+    <link rel="icon" href="../img/logo.png">
+  </head>
+  <body style="overflow:auto;">
+    <!-- Header Bar -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+
+      <!-- This <a> contains logo image and text -->
+      <a class="navbar-brand" href="../index.html">
+        <!-- CAN INSERT LOGO IMAGE HERE -->
+        <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="">
+        Let's Talk!
+      </a>
+
+      <!-- Not sure what this part does -->
+      <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+
+      <!-- This is the menu to the right of the Logo -->
+      <div class="collapse navbar-collapse" id="navbarNav">
+        <ul class="navbar-nav ml-auto">
+          <!-- Clicking Login In navs to Login page -->
+          <li class="nav-item">
+            <a class="nav-link" href="./login.html">Log In</a>
+          </li>
+
+          <!-- Clicking Register navs to Register page -->
+          <li class="nav-item active">
+            <a class="nav-link" href="./register.html">Register<span class="sr-only">(current)</span></a>
+          </li>
+
+        </ul>
+      </div>
+    </nav>
+    <!-- Registration Contents -->
+    <div class="area3">
+      <div class=" container-fluid">
+       <ul class="squares3" >
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+         <li></li>
+       </ul>
+        <!-- Title -->
+        <div style="padding:50px;"></div>
+        <!--  -->
+        <div class="form-group">
+          <fieldset id="field" class="border p-5 m-auto" style="z-index:1000;">
+            <div>
+              <h1 class="text-center">Register</h1>
+                <!-- Full Name -->
+                <div class="input-group">
+                  <!-- <label for="inputName">Full name</label> -->
+                  <input type="text" class="form-control" id="inputName" placeholder="Full name">
+                </div>
+                <div style="margin:15px;"></div>
+                <!-- Email entry -->
+                <div class="input-group">
+                  <!-- <label for="inputEmail1">Email address</label> -->
+                  <input type="email" class="form-control" id="inputEmail1" aria-describedby="emailHelp" placeholder="Enter email">
+                </div>
+                <div>
+                  <small id="emailHelp" class="form-text text-muted">We'll never share your email with anyone else.</small>
+                </div>
+                <div style="margin:15px;"></div>
+                <!-- Password entry -->
+                <div class="input-group">
+                  <!-- <label for="inputPassword1">Password</label> -->
+                  <input type="password" class="form-control" id="inputPassword1" placeholder="Password">
+                </div>
+                <div style="margin:15px;"></div>
+                <!-- Password re-entry -->
+                <div class="form-group">
+                  <!-- <label for="inputPassword2">Confirm password</label> -->
+                  <!-- <input type="password" class="form-control" id="inputPassword2" placeholder="Confirm password"></div> -->
+                <!-- Fluent language -->
+                <div class="form-group">
+                  <!-- <label for="inputFluent">Fluent language</label> -->
+                  <!-- <input type="text" class="form-control" id="inputFluent" placeholder="Enter fluent language"> -->
+                  <div class="input-group mb-3">
+                    <select class="custom-select" id="inputFluent">
+                      <option value="Select fluent language">Select fluent language</option>
+                      <option value="Afrikaans">Afrikaans</option>
+                      <option value="Albanian">Albanian</option>
+                      <option value="Amharic">Amharic</option>
+                      <option value="Arabic">Arabic</option>
+                      <option value="Armenian">Armenian</option>
+                      <option value="Azerbaijani">Azerbaijani</option>
+                      <option value="Basque">Basque</option>
+                      <option value="Belarusian">Belarusian</option>
+                      <option value="Bengali">Bengali</option>
+                      <option value="Bosnian">Bosnian</option>
+                      <option value="Bulgarian">Bulgarian</option>
+                      <option value="Burmese">Burmese</option>
+                      <option value="Catalan">Catalan</option>
+                      <option value="Cebuano">Cebuano</option>
+                      <option value="Chichewa">Chichewa</option>
+                      <option value="Chinese">Chinese</option>
+                      <option value="Corsican">Corsican</option>
+                      <option value="Croatian">Croatian</option>
+                      <option value="Czech">Czech</option>
+                      <option value="Danish">Danish</option>
+                      <option value="Dutch">Dutch</option>
+                      <option value="English">English</option>
+                      <option value="Esperanto">Esperanto</option>
+                      <option value="Estonian">Estonian</option>
+                      <option value="Filipino">Filipino</option>
+                      <option value="Finnish">Finnish</option>
+                      <option value="French">French</option>
+                      <option value="Frisian">Frisian</option>
+                      <option value="Galician">Galician</option>
+                      <option value="Georgian">Georgian</option>
+                      <option value="German">German</option>
+                      <option value="Greek">Greek</option>
+                      <option value="Gujarati">Gujarati</option>
+                      <option value="Haitian Creole">Haitian Creole</option>
+                      <option value="Hausa">Hausa</option>
+                      <option value="Hawaiian">Hawaiian</option>
+                      <option value="Hebrew">Hebrew</option>
+                      <option value="Hindi">Hindi</option>
+                      <option value="Hmong">Hmong</option>
+                      <option value="Hungarian">Hungarian</option>
+                      <option value="Icelandic">Icelandic</option>
+                      <option value="Igbo">Igbo</option>
+                      <option value="Indonesian">Indonesian</option>
+                      <option value="Irish">Irish</option>
+                      <option value="Italian">Italian</option>
+                      <option value="Japanese">Japanese</option>
+                      <option value="Javanese">Javanese</option>
+                      <option value="Kannada">Kannada</option>
+                      <option value="Kazakh">Kazakh</option>
+                      <option value="Khmer">Khmer</option>
+                      <option value="Korean">Korean</option>
+                      <option value="Kurdish (Kurmanji)">Kurdish (Kurmanji)</option>
+                      <option value="Kyrgyz">Kyrgyz</option>
+                      <option value="Lao">Lao</option>
+                      <option value="Latin">Latin</option>
+                      <option value="Latvian">Latvian</option>
+                      <option value="Lithuanian">Lithuanian</option>
+                      <option value="Luxembourgish">Luxembourgish</option>
+                      <option value="Macedonian">Macedonian</option>
+                      <option value="Malagasy">Malagasy</option>
+                      <option value="Malay">Malay</option>
+                      <option value="Malayalam">Malayalam</option>
+                      <option value="Maltese">Maltese</option>
+                      <option value="Maori">Maori</option>
+                      <option value="Marathi">Marathi</option>
+                      <option value="Mongolian">Mongolian</option>
+                      <option value="Nepali">Nepali</option>
+                      <option value="Norwegian (Bokmål)">Norwegian (Bokmål)</option>
+                      <option value="Pashto">Pashto</option>
+                      <option value="Persian">Persian</option>
+                      <option value="Polish">Polish</option>
+                      <option value="Portuguese">Portuguese</option>
+                      <option value="Punjabi">Punjabi</option>
+                      <option value="Romanian">Romanian</option>
+                      <option value="Russian">Russian</option>
+                      <option value="Samoan">Samoan</option>
+                      <option value="Scots Gaelic">Scots Gaelic</option>
+                      <option value="Serbian">Serbian</option>
+                      <option value="Sesotho">Sesotho</option>
+                      <option value="Shona">Shona</option>
+                      <option value="Sindhi">Sindhi</option>
+                      <option value="Sinhala">Sinhala</option>
+                      <option value="Slovak">Slovak</option>
+                      <option value="Slovenian">Slovenian</option>
+                      <option value="Somali">Somali</option>
+                      <option value="Spanish">Spanish</option>
+                      <option value="Sundanese">Sundanese</option>
+                      <option value="Swahili">Swahili</option>
+                      <option value="Swedish">Swedish</option>
+                      <option value="Tajik">Tajik</option>
+                      <option value="Tamil">Tamil</option>
+                      <option value="Telugu">Telugu</option>
+                      <option value="Thai">Thai</option>
+                      <option value="Turkish">Turkish</option>
+                      <option value="Ukrainian">Ukrainian</option>
+                      <option value="Urdu">Urdu</option>
+                      <option value="Uzbek">Uzbek</option>
+                      <option value="Vietnamese">Vietnamese</option>
+                      <option value="Welsh">Welsh</option>
+                      <option value="Xhosa">Xhosa</option>
+                      <option value="Yiddish">Yiddish</option>
+                      <option value="Yoruba">Yoruba</option>
+                      <option value="Zulu">Zulu</option>
+                    </select>
+                  </div>
+                </div>
+                <!-- Learning language -->
+                <div class="form-group">
+                  <!-- <label for="inputLearning">Language I'm learning</label> -->
+                  <div class="input-group mb-3">
+                    <select class="custom-select" id="inputLearning">
+                      <option value="Select target language">Select target language</option>
+                      <option value="Afrikaans">Afrikaans</option>
+                      <option value="Albanian">Albanian</option>
+                      <option value="Amharic">Amharic</option>
+                      <option value="Arabic">Arabic</option>
+                      <option value="Armenian">Armenian</option>
+                      <option value="Azerbaijani">Azerbaijani</option>
+                      <option value="Basque">Basque</option>
+                      <option value="Belarusian">Belarusian</option>
+                      <option value="Bengali">Bengali</option>
+                      <option value="Bosnian">Bosnian</option>
+                      <option value="Bulgarian">Bulgarian</option>
+                      <option value="Burmese">Burmese</option>
+                      <option value="Catalan">Catalan</option>
+                      <option value="Cebuano">Cebuano</option>
+                      <option value="Chichewa">Chichewa</option>
+                      <option value="Chinese">Chinese</option>
+                      <option value="Corsican">Corsican</option>
+                      <option value="Croatian">Croatian</option>
+                      <option value="Czech">Czech</option>
+                      <option value="Danish">Danish</option>
+                      <option value="Dutch">Dutch</option>
+                      <option value="English">English</option>
+                      <option value="Esperanto">Esperanto</option>
+                      <option value="Estonian">Estonian</option>
+                      <option value="Filipino">Filipino</option>
+                      <option value="Finnish">Finnish</option>
+                      <option value="French">French</option>
+                      <option value="Frisian">Frisian</option>
+                      <option value="Galician">Galician</option>
+                      <option value="Georgian">Georgian</option>
+                      <option value="German">German</option>
+                      <option value="Greek">Greek</option>
+                      <option value="Gujarati">Gujarati</option>
+                      <option value="Haitian Creole">Haitian Creole</option>
+                      <option value="Hausa">Hausa</option>
+                      <option value="Hawaiian">Hawaiian</option>
+                      <option value="Hebrew">Hebrew</option>
+                      <option value="Hindi">Hindi</option>
+                      <option value="Hmong">Hmong</option>
+                      <option value="Hungarian">Hungarian</option>
+                      <option value="Icelandic">Icelandic</option>
+                      <option value="Igbo">Igbo</option>
+                      <option value="Indonesian">Indonesian</option>
+                      <option value="Irish">Irish</option>
+                      <option value="Italian">Italian</option>
+                      <option value="Japanese">Japanese</option>
+                      <option value="Javanese">Javanese</option>
+                      <option value="Kannada">Kannada</option>
+                      <option value="Kazakh">Kazakh</option>
+                      <option value="Khmer">Khmer</option>
+                      <option value="Korean">Korean</option>
+                      <option value="Kurdish (Kurmanji)">Kurdish (Kurmanji)</option>
+                      <option value="Kyrgyz">Kyrgyz</option>
+                      <option value="Lao">Lao</option>
+                      <option value="Latin">Latin</option>
+                      <option value="Latvian">Latvian</option>
+                      <option value="Lithuanian">Lithuanian</option>
+                      <option value="Luxembourgish">Luxembourgish</option>
+                      <option value="Macedonian">Macedonian</option>
+                      <option value="Malagasy">Malagasy</option>
+                      <option value="Malay">Malay</option>
+                      <option value="Malayalam">Malayalam</option>
+                      <option value="Maltese">Maltese</option>
+                      <option value="Maori">Maori</option>
+                      <option value="Marathi">Marathi</option>
+                      <option value="Mongolian">Mongolian</option>
+                      <option value="Nepali">Nepali</option>
+                      <option value="Norwegian (Bokmål)">Norwegian (Bokmål)</option>
+                      <option value="Pashto">Pashto</option>
+                      <option value="Persian">Persian</option>
+                      <option value="Polish">Polish</option>
+                      <option value="Portuguese">Portuguese</option>
+                      <option value="Punjabi">Punjabi</option>
+                      <option value="Romanian">Romanian</option>
+                      <option value="Russian">Russian</option>
+                      <option value="Samoan">Samoan</option>
+                      <option value="Scots Gaelic">Scots Gaelic</option>
+                      <option value="Serbian">Serbian</option>
+                      <option value="Sesotho">Sesotho</option>
+                      <option value="Shona">Shona</option>
+                      <option value="Sindhi">Sindhi</option>
+                      <option value="Sinhala">Sinhala</option>
+                      <option value="Slovak">Slovak</option>
+                      <option value="Slovenian">Slovenian</option>
+                      <option value="Somali">Somali</option>
+                      <option value="Spanish">Spanish</option>
+                      <option value="Sundanese">Sundanese</option>
+                      <option value="Swahili">Swahili</option>
+                      <option value="Swedish">Swedish</option>
+                      <option value="Tajik">Tajik</option>
+                      <option value="Tamil">Tamil</option>
+                      <option value="Telugu">Telugu</option>
+                      <option value="Thai">Thai</option>
+                      <option value="Turkish">Turkish</option>
+                      <option value="Ukrainian">Ukrainian</option>
+                      <option value="Urdu">Urdu</option>
+                      <option value="Uzbek">Uzbek</option>
+                      <option value="Vietnamese">Vietnamese</option>
+                      <option value="Welsh">Welsh</option>
+                      <option value="Xhosa">Xhosa</option>
+                      <option value="Yiddish">Yiddish</option>
+                      <option value="Yoruba">Yoruba</option>
+                      <option value="Zulu">Zulu</option>
+                    </select>
+                  </div>
+                </div>
+                <button type="submit" id="btnRegister" class="btn">Register</button>
+            </div>
+          </fieldset>
+        <div style="padding:50px;"></div>
+        </div>
+      </div>
+      <div style="padding:50px;"></div>
+    </div>
+    <!-- Scripts -->
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-firestore.js"></script>
+    <script src="../js/register.js"></script>
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  </body>
+</html>

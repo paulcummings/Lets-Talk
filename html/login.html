@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+  <title>Login</title>
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css" integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.1/css/bootstrap-theme.min.css">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/twitter-bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha256-m/h/cUDAhf6/iBRixTbuc8+Rg2cIETQtPcH9D3p2Kg0=" crossorigin="anonymous" />
+  <!-- open-iconic-bootstrap (icon set for bootstrap) -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/open-iconic/1.1.1/font/css/open-iconic-bootstrap.min.css" integrity="sha256-BJ/G+e+y7bQdrYkS2RBTyNfBHpA9IuGaPmf9htub5MQ=" crossorigin="anonymous" />
+  <link href="../css/styles.css" rel="stylesheet">
+  <link rel="icon" href="../img/logo.png">
+</head>
+
+<body style="overflow:auto;">
+  <!-- Header Bar -->
+  <nav class="navbar navbar-expand-lg navbar-light">
+
+    <!-- This <a> contains logo image and text -->
+    <a class="navbar-brand" href="../index.html">
+      <!-- CAN INSERT LOGO IMAGE HERE -->
+      <img src="../img/logo.png" width="30" height="30" class="d-inline-block align-top" alt="" href="../index.html">
+      Let's Talk!
+    </a>
+
+    <!-- Not sure what this part does -->
+    <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <!-- This is the menu to the right of the Logo -->
+    <div class="collapse navbar-collapse" id="navbarNav">
+      <ul class="navbar-nav ml-auto">
+
+
+        <!-- Clicking Login In navs to Login page -->
+        <li class="nav-item active">
+          <a class="nav-link" href="./login.html">Log In<span class="sr-only">(current)</span></a>
+        </li>
+
+        <!-- Clicking Register navs to Register page -->
+        <li class="nav-item">
+          <a class="nav-link" href="./register.html">Register</a>
+        </li>
+
+      </ul>
+    </div>
+  </nav>
+  <!-- Registration Contents -->
+  <div class="area2" >
+   <ul class="squares2">
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+     <li></li>
+   </ul>
+    <div class="container-fluid">
+      <!-- Title -->
+      <div style="padding:50px;">
+      </div>
+      <!--  -->
+      <fieldset id="field" class="border p-5 m-auto">
+        <div>
+          <h1 class="text-center">Log In</h1>
+            <!-- Email entry -->
+            <div class="form-group row">
+              <div class="col-7 m-auto">
+                <span>
+                  <i id="icon" class="oi oi-person" title="person" aria-hidden="true"></i>
+                </span>
+                <input type="email" class="form-control" id="inputEmail" aria-describedby="emailHelp" placeholder="Email">
+              </div>
+            </div>
+            <!-- Password entry -->
+            <div class="form-group row">
+              <div class="col-7 m-auto">
+                <span>
+                  <i id="icon" class="oi oi-lock-locked" title="person" aria-hidden="true"></i>
+                </span>
+                <input type="password" class="form-control" id="inputPassword" placeholder="Password">
+              </div>
+            </div>
+            <div class="form-group row">
+              <div class="col-7 ml-auto" style="">
+                <a href="./forgotpassword.html">Forgot password?</a>
+              </div>
+            </div>
+            <!-- Remember me checkbox -->
+            <div class="form-group form-check col-5 m-auto">
+              <!-- <input type="checkbox" class="form-check-input" id="check">
+              <label class="form-check-label" for="check">Remember me</label>
+            </div> -->
+            <button onclick="login()"href="./account.html" type="submit" id="btnLogin" class="col-9 btn btn-block m-auto">Log in</button>
+        </div>
+      </fieldset>
+      <!-- <div align="center">
+          <div style="background-color:	#E0E0E0; padding:100px; width:50%;">
+          </div>
+        </div> -->
+    </div>
+  </div>
+  <!-- Scripts -->
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-app.js"></script>
+  <script src="https://www.gstatic.com/firebasejs/5.9.3/firebase-auth.js"></script>
+  <script src="../js/login.js"></script>
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+</body>
+
+</html>
